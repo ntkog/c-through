@@ -48,18 +48,18 @@
         packages: [{
         name: "c-through",
         location: location.pathname.replace(/\/[^/]+$/, '') + "/app"
-        }], 
+        }],
         parseOnLoad: false,
         async: true
     };
   </script>
   <!-- ArcGIS JavaScript API 4.3  -->
-  <script src="https://js.arcgis.com/4.3/"></script>
+  <script src="https://js.arcgis.com/4.6/"></script>
   <!-- load app.js -->
   <script>
   require(["c-through/welcome",  "dojo/domReady!"],function(Welcome){
     var welcome = new Welcome();
-    welcome.init();    
+    welcome.init();
   });
   </script>
   <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
@@ -71,7 +71,7 @@
 <body class="claro">
   <div id="toolsMenu"></div>
   <div id="viewDiv"></div>
- 
+
 </body>
 
 </html>
